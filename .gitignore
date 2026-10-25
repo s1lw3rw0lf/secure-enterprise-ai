@@ -1,0 +1,7 @@
+# Generated ARM templates
+infra/*.json
+
+# Local secrets and configuration
+.env
+.env.*
+*.local.json
