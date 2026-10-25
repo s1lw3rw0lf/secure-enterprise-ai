@@ -20,3 +20,6 @@ jobs:
 
       - name: Build Bicep
         run: az bicep build --file infra/main.bicep
+
+      - name: Lint Bicep
+        run: az bicep lint --file infra/main.bicep
