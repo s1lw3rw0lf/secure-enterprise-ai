@@ -1,0 +1,24 @@
+name: Validate Bicep
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Build Bicep templates
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bicep
+        uses: azure/setup-bicep@v2
+        with:
+          version: v0.48.1
+
+      - name: Build Bicep
+        run: bicep build infra/main.bicep
