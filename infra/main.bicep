@@ -5,7 +5,7 @@ param location string = resourceGroup().location
 
 @description('Prefix used for naming resources')
 @minLength(3)
-@maxLength(12)
+@maxLength(11)
 param namePrefix string = 'secureai'
 
 @description('Environment name')
