@@ -42,6 +42,11 @@ secure-enterprise-ai/
 ├── .gitignore
 └── README.md
 ```
+## Architecture
+
+The project architecture and CI validation workflow are documented here:
+
+[View Architecture Diagram](docs/architecture.md)
 
 ## Validate the Bicep Template
 
